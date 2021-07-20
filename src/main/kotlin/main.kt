@@ -63,10 +63,11 @@ fun main(args: Array<String>) {
         )
 
     )
+    println("Список гитар, информация о которых доступна:")
     guitars.forEachIndexed() { index, guitar ->
         println("${index + 1}.${guitar.nameModel}")
     }
-    println("Укажите номер гитары, о которой вы хотите узнать")
+    println("Укажите номер гитары, о которой вы хотите узнать информацию:")
     val  numberFromUser = (readLine())
     when(numberFromUser) {
         null -> println("Повторите запрос")

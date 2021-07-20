@@ -1,3 +1,5 @@
+import kotlin.text.trimIndent as trimIndent
+
 data class Guitar(
  val nameModel:String,
  val body:String,
